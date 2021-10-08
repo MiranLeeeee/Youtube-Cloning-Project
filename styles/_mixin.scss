@@ -1,0 +1,32 @@
+@mixin element_size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin element_margin($top: $margin-default, $right: $margin-default, $bottom: $margin-default, $left: $margin-default) {
+    margin: {
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+    }
+}
+
+@mixin border_style($width: 1px, $style: solid, $color: null, $radius: 0) {
+    border: {
+        width: $width;
+        style: $style;
+        color: $color;
+        radius: $radius
+    };
+}
+
+@mixin element_color($bg: null, $font: null) {
+    @if $bg {
+        background-color: $bg;
+    }
+
+    @if $font {
+        color: $font;
+    }
+}
