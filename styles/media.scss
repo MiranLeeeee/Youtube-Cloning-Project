@@ -1,0 +1,46 @@
+@media screen and (max-width: 1100px) {
+    header {
+        .search {
+            input {
+                width: 200px;
+                height: 30px;
+            }
+
+            .fa-keyboard {
+                display: none;
+            }
+        }
+
+        .login_btn {
+            font-size: 11px;
+        }
+    }
+
+    main .thumbnail {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        .search {
+
+            input,
+            .fa-keyboard {
+                display: none;
+            }
+        }
+
+        .login_btn {
+            font-size: 8px;
+        }
+    }
+
+    aside {
+        display: none;
+    }
+
+    main .thumbnail {
+        width: 300px;
+    }
+}
